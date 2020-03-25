@@ -1,5 +1,0 @@
-{{if eq (len .Params) 2}}
-{{partial "email" (dict "email" (.Get 0) "text" (.Get 1)) }}
-{{else}}
-{{partial "email" (dict "email" (.Get 0)) }}
-{{end}}
